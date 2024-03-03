@@ -1,12 +1,21 @@
 {
-  "name": "@anio-js-core-foundation/unwrap-primitive-value",
+  "name": "@anio-js-foundation/unwrap-primitive-value",
   "version": "1.0.0",
   "description": "Unwrap value from a primitive object.",
-  "main": "index.mjs",
+  "main": "./dist/package.mjs",
   "author": "Anio Software <info@anio.software>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anio-js-core-foundation/unwrap-primitive-value.git"
-  }
+    "url": "git+https://github.com/anio-js-foundation/unwrap-primitive-value.git"
+  },
+  "devDependencies": {
+    "@anio-software/npm-package-bundler": "^1.0.0"
+  },
+  "scripts": {
+    "prepare": "./node_modules/.bin/npm-package-bundler ."
+  },
+  "files": [
+    "./dist/package.mjs"
+  ]
 }
